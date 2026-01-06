@@ -1,9 +1,11 @@
 Project Structure Of Melih's Game Vault
+
 backend: Spring Boot application (REST API & PostgreSQL).
 
 frontend: React application (User Interface).
 
 1. Database Setup (PostgreSQL)
+2. 
 Credentials:
 
 Username: postgres
@@ -28,9 +30,11 @@ CREATE TABLE products (
     details TEXT, 
     category VARCHAR(255) 
 );
+
 Insert Data: Import the data using the file located at: backend/src/main/resources/data.sql
 
 2. Backend Setup (Spring Boot)
+
 Open the backend folder in IntelliJ.
 
 Wait for the project to load and index.
@@ -40,6 +44,7 @@ Run the EcommApplication class.
 The backend will run on: http://localhost:8080
 
 3. Frontend Setup (React)
+
 Open a terminal in the frontend folder.
 
 Install packages:
@@ -47,16 +52,20 @@ Install packages:
 Bash
 
 npm install
+
 Start the app:
 
 Bash
 
 npm start
+
 The frontend will run on: http://localhost:3000
 
 4. Access Links
+
 User Interface: http://localhost:3000
 
 API Endpoints: http://localhost:8080/api
 
 Note: Ensure PostgreSQL, the Backend, and the Frontend are all running at the same time.
+
