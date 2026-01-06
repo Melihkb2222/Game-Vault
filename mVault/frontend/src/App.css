@@ -1,0 +1,44 @@
+/* Reset and Base Font */
+body {
+  margin: 0;
+  font-family: 'Inter', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0a0a0b; /* Deep background color */
+  color: white;
+}
+
+/* THE LOGO WATERMARK CONTAINER */
+.vault-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Places it behind your cards */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: radial-gradient(circle, #1a1a1d 0%, #0a0a0b 100%); /* Subtle glow in center */
+}
+
+/* THE LOGO ITSELF */
+.vault-logo-watermark {
+  width: 50%; /* Large size */
+  max-width: 600px;
+  opacity: 0.12; /* Very subtle so text stays readable */
+  filter: blur(1px); /* Softens the edges */
+  pointer-events: none; /* User can click "through" it */
+  user-select: none;
+}
+
+/* Add a smooth fade-in for the content */
+.page-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
