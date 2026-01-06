@@ -5,7 +5,7 @@ backend: Spring Boot application (REST API & PostgreSQL).
 frontend: React application (User Interface).
 
 1. Database Setup (PostgreSQL)
-2. 
+ 
 Credentials:
 
 Username: postgres
@@ -68,4 +68,5 @@ User Interface: http://localhost:3000
 API Endpoints: http://localhost:8080/api
 
 Note: Ensure PostgreSQL, the Backend, and the Frontend are all running at the same time.
+
 
